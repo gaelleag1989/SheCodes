@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photography 📷</title>
+    <style>
+        body {
+            background: radial-gradient(circle at -8.9% 51.2%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 23%, rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%);  
+            
+          }
+
+        h1 { 
+            text-align: center;
+            color:  #ffa34d;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 40px;
+            
+            
+        }
+
+        h2 {
+            text-align: center;
+            color: #FF7C00;
+            text-decoration: underline;
+            font-weight: lighter;
+        }
+        
+
+
+        img {
+            display: block;
+            margin: 0 auto;
+            border-radius: 20%;
+        }
+
+        .subtitle { 
+            text-align: center;
+            padding: 10px 5px 10px 5px ;
+            background:#ffa34d;
+            margin: 0 auto;
+            max-width: 200px;
+            border-radius: 45%;
+            opacity: 70%;
+            font-size: 16px;
+            
+        }
+
+
+        .definition {
+            text-align: center;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 15px 20px;
+            background: #ffa34d;
+            opacity: 70%;
+            font-weight:600px;
+            border-radius: 30%;
+        }
+
+        .ReadMore {
+            text-align: center;
+            padding: 20px 0px;
+            
+        }
+
+        .Wikipedia {
+          color:#ffa34d ;
+            text-decoration: underline;
+        }
+
+        button { 
+        display: block;
+        margin: 0 auto;
+        line-height: 30px;
+        background: white;
+        color:#FF7C00 ;
+        box-shadow: 3px 3px 1px #ffa34d;
+        border: 10px;
+        transition: all 200ms ease-in-out;
+        border-radius: 10px;
+
+        }
+        button:hover {
+        background:#ffa34d;
+        color: white;
+        cursor: pointer;
+        }
+
+        .details {
+          text-align: center;
+          padding: 20px 5px;
+          font-size: 12px;
+          color: white;
+        }
+
+        .contact {
+          color: #ffa34d;
+        }
+
+        .platform {
+          color: #ffa34d;
+        }
+
+        .coded {
+          color: white;
+          font-size: 12px;
+          text-align: center;
+        }
+
+
+
+    </style>
+  </head>
+  <body>
+    <h1>Photography</h1>
+    <h2><em>The passion of photographing</em></h2>
+    <hr>
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/508/original/Photography-Logos-1280x720-1-1024x576.png?1642965371"
+      alt="camera"
+      width="500"/>
+    
+<br>
+
+    <div class= "subtitle"><strong> What is Photography? </strong></div>
+<br>
+    <p class="definition"> <em>
+      Photography is the art of capturing light with a camera, usually via a
+      digital sensor or film, to create an image. With the right camera
+      equipment, you can even photograph wavelengths of light invisible to the
+      human eye, including UV, infrared, and radio.</em>
+    </p>
+    <div class="ReadMore">
+      <a
+        href="https://en.wikipedia.org/wiki/Photography"
+        target="_blank" Read more on Wikipedia
+        class = "Wikipedia"> Read more on Wikipedia</a>
+    </div>
+</br>
+    <button> Apply Photography Workshop </button>
+
+    <div class="details">
+      <span class="contact">Email: </span>
+      photography@workshop.com
+      <span class="platform"> Instagram:</span>
+      @photographyworkshop
+    </div>
+    <p class ="coded"> <em>Coded by Gaëlle Goncalves</em></p>
+    <script>
+      function Apply () {
+        let firstname = prompt("What's your first name?");
+        alert ("Hello " + firstname + "!");
+        let age= prompt ("How old are you?");
+
+        if (age >= 16) {
+          let h1 = document.querySelector("h1");
+          h1.innerHTML = " Hi," + firstname + "! You can apply for the Workshop! 😄 ";
+        } else {
+          let h1 = document.querySelector("h1");
+          h1.innerHTML =
+            " Sorry, " + firstname + "... You cannot join the Workshop ☹️ ";
+        }
+      }
+      let contactButton = document.querySelector("button");
+
+      contactButton.addEventListener("click", Apply);
+    </script>
+  </body>
+</html>
